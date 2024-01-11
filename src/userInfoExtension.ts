@@ -32,6 +32,10 @@ interface AddressInfo {
  * @param user - 一個物件，包含使用者的基本資訊和地址資訊
  * @returns - 回傳一個物件，表示合併後的使用者資訊
  */
+
+interface FullUserInfo extends BasicUserInfo, AddressInfo{}
+
 export function createFullUserInfo(user: FullUserInfo): FullUserInfo {
     // 請在此處寫下你的程式碼
+    return user;
 }

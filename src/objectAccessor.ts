@@ -14,4 +14,8 @@
  */
 export function createObjectAccessor<T>(obj: T) {
     // 請在此處寫下你的程式碼
+    return {
+        get: <K extends keyof T>(property: K) => obj[property],
+        set: <K extends keyof T>(property: K,value: T[K]) => obj[property] = value
+    }
 }

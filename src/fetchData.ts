@@ -7,3 +7,8 @@
 
 // 請在下方寫下你的程式碼
 
+export async function fetchData(url:string):Promise<any>{
+        const response = await fetch(url);
+        const result = response.json();
+        return result;
+}
