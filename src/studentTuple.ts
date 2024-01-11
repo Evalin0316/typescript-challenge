@@ -9,5 +9,5 @@
 
 export function printStudentInfo(student:[string,number]) {
     // 在此實現函式
-    return `${student[0]}: ${student[1]}% `
+    return `${student[0]}: ${student[1]}%`
 }

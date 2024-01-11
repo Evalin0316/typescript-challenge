@@ -7,8 +7,16 @@
 
 // 請在下方寫下你的程式碼
 
+// interface Data {
+//     id: number;
+// }
+
 export async function fetchData(url:string):Promise<any>{
         const response = await fetch(url);
-        const result = response.json();
-        return result;
+        // if (!response.ok) {
+        // throw new Error(`HTTP error! status: ${response.status}`);
+        // }
+        // const data = (await response.json()) as Data;
+        const data = response.json()
+        return data;
 }

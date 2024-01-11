@@ -16,7 +16,7 @@
 interface Todo{
     id:number,
     task:string,
-    complete:boolean
+    completed:boolean
 }
 
 
@@ -25,7 +25,7 @@ export function addTodo(todos: Todo[], task: string): Todo[] {
     const newTodo = {
         id: todos.length + 1,
         task,
-        complete:false
+        completed: false
     }
     return [...todos, newTodo];
 }

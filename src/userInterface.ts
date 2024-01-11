@@ -13,7 +13,7 @@
  */
 
 interface UserInfo{
-    fistName:string,
+    firstName:string,
     lastName:string
 }
 
@@ -21,5 +21,5 @@ interface UserInfo{
 
 export function getFullName(user: UserInfo): string {
     // 在此實現函式
-    return `${user.fistName} ${user.lastName}`
+    return `${user.firstName} ${user.lastName}`
 }
